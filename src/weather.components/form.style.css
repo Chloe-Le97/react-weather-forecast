@@ -1,0 +1,23 @@
+.error{
+    color:red;
+    font-size: 20px;
+}
+.input{
+    background: transparent;
+	border: 0;
+	border-bottom: 2px solid #a5a4a4;
+}
+.btn{
+    margin-left: 10px;
+    background: #fa7dab;
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: capitalize;
+	font-size: 15px;
+}
+.btn:hover{
+    background: #fa7dabd0;
+}

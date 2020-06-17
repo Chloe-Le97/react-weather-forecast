@@ -1,0 +1,14 @@
+.weather{
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    height: fit-content;
+    background-color: rgba(149, 174, 255, 0.541) ;
+}
+.description{
+    text-transform: capitalize;
+}
+.icon{
+    margin-top: -20px;
+    padding: 10px;
+}
