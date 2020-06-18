@@ -55,9 +55,14 @@ class App extends React.Component{
   }
 
   handleChange= e =>{
-    this.setState({
-      input:e.target.value
-    })
+    e.preventDefault();
+    if (e.keyCode===13){console.log('enter')}
+    else{
+      this.setState({
+        input:e.target.value
+      })
+    }
+    
   }
 
   getWeather = async(e) =>{
@@ -118,7 +123,8 @@ class App extends React.Component{
           input={this.state.input} 
           handleChange={this.handleChange} 
           loadWeather={this.getWeather}
-          error={this.state.error}/>  
+          error={this.state.error}
+         />  
         <Weather 
           city={this.state.city} 
           country={this.state.country} 
