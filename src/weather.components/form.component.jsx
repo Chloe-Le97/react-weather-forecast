@@ -1,29 +1,37 @@
-import React from 'react';
-import './form.style.css'
+import React from "react";
+import "./form.style.css";
 
-const Form = (props)=>{
- return (
-     <div>  
-         <form onSubmit={props.loadWeather}>
-            <input 
-                value={props.input} 
-                type='text' 
-                className='input' 
-                placeholder="Type the city" 
-                name='city' 
-                onChange={props.handleChange}>
-            </input>
-            <button type='submit' className='btn'>Get weather</button>
-         </form>
-         <div className='error'>{props.error?error():null}</div>
-     </div>
- )
-}
+const Form = (props) => {
+  return (
+    <div>
+      <h3>Weather Forecast</h3>
+      <form onSubmit={props.loadWeather} className="form">
+        <input
+          value={props.input}
+          type="text"
+          className="input"
+          placeholder="Type the city"
+          name="city"
+          onChange={props.handleChange}
+        ></input>
+        <button type="submit" className="btn1">
+          Search
+        </button>
+        <button
+          type="button"
+          className="btn2"
+          onClick={props.getCurrentWeather}
+        >
+          Current Position
+        </button>
+      </form>
+      <div className="error">{props.error ? error() : null}</div>
+    </div>
+  );
+};
 
-function error(){
-    return(
-        <div>Please Enter Valid City</div>
-    )
+function error() {
+  return <div>Please Enter Valid City</div>;
 }
 
 export default Form;

@@ -1,23 +1,53 @@
-.error{
-    color:red;
-    font-size: 20px;
+.error {
+  color: red;
+  font-size: 20px;
 }
-.input{
-    background: transparent;
-	border: 0;
-	border-bottom: 2px solid #a5a4a4;
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    "input input"
+    "btn1  btn2";
 }
-.btn{
-    margin-left: 10px;
-    background: #fa7dab;
-	text-align: center;
-	padding: 5px;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	text-transform: capitalize;
-	font-size: 15px;
+
+.input {
+  grid-area: input;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #a5a4a4;
 }
-.btn:hover{
-    background: #fa7dabd0;
+.btn1 {
+  grid-area: btn1;
+  border: none;
+  background: rgb(59, 82, 156);
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.btn1:hover,
+.btn1:active,
+.btn1:focus {
+  box-shadow: 0 0 20px 0 rgba(59, 82, 158, 0.432);
+}
+.btn2 {
+  grid-area: btn2;
+  border: none;
+  background: rgb(59, 82, 156);
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.btn2:hover {
+  box-shadow: 0 0 20px 0 rgba(59, 82, 158, 0.432);
 }
