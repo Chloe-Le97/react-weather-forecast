@@ -4,7 +4,7 @@ import "./form.style.css";
 const Form = (props) => {
   return (
     <div>
-      <h3>Weather Forecast</h3>
+      <h3>How's the weather?</h3>
       <form onSubmit={props.loadWeather} className="form">
         <input
           value={props.input}

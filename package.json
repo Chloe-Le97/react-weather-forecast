@@ -2,7 +2,7 @@
   "name": "react-weather-forecast",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cat-isme.github.io/react-weather-forecast",
+  "homepage": "https://chloe-le97.github.io/react-weather-forecast",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

@@ -115,13 +115,9 @@ class App extends React.Component {
 
   handleChange = (e) => {
     e.preventDefault();
-    if (e.keyCode === 13) {
-      console.log("enter");
-    } else {
-      this.setState({
-        input: e.target.value,
-      });
-    }
+    this.setState({
+      input: e.target.value,
+    });
   };
 
   getWeather = async (e) => {
